@@ -18,19 +18,46 @@ body {
   justify-content: center;
 }
 
+#inner-flex-row {
+  display: flex;
+  width: 40%;
+}
+
+@media only screen and (max-width: 1400px) {
+  #inner-flex-row {
+    flex-direction: column-reverse;
+    align-items: center;
+    width: 100vw;
+  }
+  #flex-row {
+    width: 100vw;
+    flex-direction: column;
+    align-items: center;
+  }
+  #checkout {
+    margin: 2rem 0 2rem 0;
+  }
+  #photos {
+    /* max-width: 10%; */
+  }
+}
+
+#description {
+  font-family: "Amazon Ember", Arial, sans-serif;
+  width: 70%;
+  height: 70vh;
+  border: 1px solid black;
+}
+
+#checkout {
+  margin-left: 1.3%;
+}
+
 #flex-column {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
-
-#description {
-  font-family: "Amazon Ember", Arial, sans-serif;
-}
-
-#checkout {
-  margin-left: 1.3%;
 }
 
 #CustomerReviews {
