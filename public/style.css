@@ -20,7 +20,7 @@ body {
 }
 
 #photos {
-  flex-basis: 25%;
+  flex-basis: 35%;
 }
 
 #description {
@@ -28,20 +28,11 @@ body {
   z-index: -1;
 }
 
-#inner-flex-row {
-  display: flex;
-  /* justify-content: center; */
-  flex-basis: 100%;
-  gap: 1em;
+#checkout {
+  flex-basis: 253px;
 }
 
 @media only screen and (max-width: 1100px) {
-  #inner-flex-row {
-    flex-direction: column-reverse;
-    align-items: center;
-    width: 90vw;
-    gap: 2em;
-  }
   #flex-row {
     width: 90vw;
     flex-direction: column;
@@ -49,6 +40,7 @@ body {
     gap: 2em;
   }
   #photos {
+    max-width: 400px;
     order: 1;
   }
   #checkout {
